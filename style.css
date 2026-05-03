@@ -1,0 +1,43 @@
+/* Custom styles not covered by Tailwind CDN */
+
+/* Reveal animations for scroll */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Active Nav Link Styling */
+.nav-link.active {
+    color: #8EDB6C !important;
+    font-weight: 600;
+}
+
+.mobile-nav-link.active {
+    color: #8EDB6C !important;
+    background-color: #f9fafb; /* gray-50 equivalent */
+    font-weight: 600;
+}
+
+/* Aspect ratio for demo video if not provided by plugin */
+.aspect-w-16 {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+}
+.aspect-w-16 iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Smooth scrolling offset for fixed header */
+html {
+    scroll-padding-top: 80px; /* height of h-20 header */
+}
