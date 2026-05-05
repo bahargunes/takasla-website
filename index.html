@@ -50,6 +50,8 @@
 
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex space-x-8">
+                    <a href="#home"
+                        class="nav-link text-light hover:text-primary transition-colors font-medium">Home</a>
                     <a href="#problem"
                         class="nav-link text-light hover:text-primary transition-colors font-medium">Problem</a>
                     <a href="#how-it-works"
@@ -76,6 +78,8 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-bgcolor border-b border-bordercolor">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home"
+                    class="mobile-nav-link block px-3 py-2 text-base font-medium text-light hover:text-primary hover:bg-gray-50 rounded-md">Home</a>
                 <a href="#problem"
                     class="mobile-nav-link block px-3 py-2 text-base font-medium text-light hover:text-primary hover:bg-gray-50 rounded-md">Problem</a>
                 <a href="#how-it-works"
@@ -95,6 +99,39 @@
     </nav>
 
     <main>
+        <!-- Section 0: Home -->
+        <section id="home"
+            class="relative min-h-[calc(100vh-5rem)] flex items-center justify-center overflow-hidden bg-bgcolor">
+            <!-- Background Images -->
+            <div class="absolute inset-0 z-0 pointer-events-none">
+                <!-- Left Hand (Bottom Left) -->
+                <img src="assets/left_hand.png" alt="Left Hand"
+                    class="absolute bottom-8 left-0 w-36 md:w-60 lg:w-[335px] object-contain animate-slide-in-left">
+                <!-- Right Hand (Top Right) -->
+                <img src="assets/right_hand.png" alt="Right Hand"
+                    class="absolute top-8 right-0 w-36 md:w-60 lg:w-[335px] object-contain animate-slide-in-right">
+            </div>
+
+            <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal">
+                <h1 class="text-5xl md:text-7xl font-extrabold text-dark mb-6 tracking-tight">
+                    Trade Your Way to a <br /><span class="text-primary">Better Lifestyle</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-light mb-10 max-w-3xl mx-auto">
+                    Exchange items you no longer need for things you want. Save money, reduce waste, and connect with
+                    your community.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#how-it-works"
+                        class="px-8 py-4 text-lg font-semibold rounded-full text-dark bg-primary hover:bg-opacity-90 transition-all shadow-lg hover:shadow-xl hover:-translate-y-1 duration-300">
+                        Start Trading
+                    </a>
+                    <a href="#problem"
+                        class="px-8 py-4 text-lg font-semibold rounded-full text-dark bg-white border border-bordercolor hover:bg-gray-50 transition-all shadow-sm hover:shadow-md hover:-translate-y-1 duration-300">
+                        Discover More
+                    </a>
+                </div>
+        </section>
+
         <!-- Section 1: Problem -->
         <section id="problem" class="py-24 bg-bgcolor min-h-screen flex flex-col justify-center">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -306,7 +343,7 @@
         </section>
 
         <!-- Section 5: Developers -->
-        <section id="developers" class="py-24 bg-bgcolor min-h-screen flex flex-col justify-center">
+        <section id="developers" class="py-24 bg-bgcolor">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16 reveal">
                     <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Meet the Team</h2>
@@ -429,8 +466,7 @@
         </section>
 
         <!-- Section 6: Tech Stack -->
-        <section id="tech-stack"
-            class="py-24 bg-gray-50 border-t border-bordercolor min-h-screen flex flex-col justify-center">
+        <section id="tech-stack" class="py-24 bg-gray-50 border-t border-bordercolor">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16 reveal">
                     <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Tech Stack</h2>

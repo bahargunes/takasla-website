@@ -20,15 +20,18 @@
 
 .mobile-nav-link.active {
     color: #8EDB6C !important;
-    background-color: #f9fafb; /* gray-50 equivalent */
+    background-color: #f9fafb;
+    /* gray-50 equivalent */
     font-weight: 600;
 }
 
 /* Aspect ratio for demo video if not provided by plugin */
 .aspect-w-16 {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
+    padding-bottom: 56.25%;
+    /* 16:9 */
 }
+
 .aspect-w-16 iframe {
     position: absolute;
     top: 0;
@@ -39,5 +42,41 @@
 
 /* Smooth scrolling offset for fixed header */
 html {
-    scroll-padding-top: 80px; /* height of h-20 header */
+    scroll-padding-top: 80px;
+    /* height of h-20 header */
+}
+
+/* Hand slide animations */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.animate-slide-in-left {
+    animation: slideInLeft 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s forwards;
+    opacity: 0;
+}
+
+.animate-slide-in-right {
+    animation: slideInRight 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s forwards;
+    opacity: 0;
 }
