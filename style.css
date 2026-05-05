@@ -46,37 +46,17 @@ html {
     /* height of h-20 header */
 }
 
-/* Hand slide animations */
-@keyframes slideInLeft {
-    from {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slideInRight {
-    from {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-.animate-slide-in-left {
-    animation: slideInLeft 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s forwards;
+/* Hand slide animations — initial hidden state */
+.hand-left {
+    transform: translateX(-100%);
     opacity: 0;
+    transition: transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-.animate-slide-in-right {
-    animation: slideInRight 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s forwards;
+.hand-right {
+    transform: translateX(100%);
     opacity: 0;
+    transition: transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
