@@ -97,9 +97,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 // Phase 2: After the CSS transition completes (~1s), switch to scroll-driven mode
                 setTimeout(() => {
-                    // Remove CSS transitions so scroll feels instant/responsive
-                    leftHand.style.transition = 'none';
-                    rightHand.style.transition = 'none';
+                    // Switch to a shorter transition so scroll movement feels smooth
+                    leftHand.style.transition = 'transform 0.75 ease-out, opacity 0.75 ease-out';
+                    rightHand.style.transition = 'transform 0.75 ease-out, opacity 0.75 ease-out';
                     scrollDriven = true;
                     updateHandsFromScroll();
                 }, 1050);
