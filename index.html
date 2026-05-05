@@ -96,7 +96,7 @@
 
     <main>
         <!-- Section 1: Problem -->
-        <section id="problem" class="py-24 bg-bgcolor">
+        <section id="problem" class="py-24 bg-bgcolor min-h-screen flex flex-col justify-center">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-3xl mx-auto reveal">
                     <h1 class="text-4xl md:text-5xl font-extrabold text-dark mb-6 tracking-tight">The Problem We're
@@ -116,50 +116,58 @@
         </section>
 
         <!-- Section 2: How It Works -->
-        <section id="how-it-works" class="py-24 bg-gray-50">
+        <section id="how-it-works" class="py-24 bg-gray-50 min-h-screen flex flex-col justify-center">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16 reveal">
                     <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">How It Works</h2>
                     <p class="text-lg text-light">Exchange items in four simple steps</p>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8">
                     <!-- Step 1 -->
                     <div
                         class="bg-bgcolor p-8 rounded-2xl shadow-sm border border-bordercolor hover:shadow-md transition-shadow reveal hover:-translate-y-1 duration-300">
-                        <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
-                            <i data-lucide="plus-square" class="w-7 h-7 text-primary"></i>
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center shrink-0">
+                                <i data-lucide="plus-square" class="w-7 h-7 text-primary"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-dark">1. Create a Listing</h3>
                         </div>
-                        <h3 class="text-xl font-bold text-dark mb-3">1. Create a Listing</h3>
                         <p class="text-light">Snap a photo and add a brief description of the item you want to trade.
                         </p>
                     </div>
                     <!-- Step 2 -->
                     <div
                         class="bg-bgcolor p-8 rounded-2xl shadow-sm border border-bordercolor hover:shadow-md transition-shadow reveal hover:-translate-y-1 duration-300 delay-100">
-                        <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
-                            <i data-lucide="search" class="w-7 h-7 text-primary"></i>
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center shrink-0">
+                                <i data-lucide="search" class="w-7 h-7 text-primary"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-dark">2. Browse Items</h3>
                         </div>
-                        <h3 class="text-xl font-bold text-dark mb-3">2. Browse Items</h3>
                         <p class="text-light">Explore items offered by others in your community that you might want.</p>
                     </div>
                     <!-- Step 3 -->
                     <div
                         class="bg-bgcolor p-8 rounded-2xl shadow-sm border border-bordercolor hover:shadow-md transition-shadow reveal hover:-translate-y-1 duration-300 delay-200">
-                        <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
-                            <i data-lucide="arrow-left-right" class="w-7 h-7 text-primary"></i>
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center shrink-0">
+                                <i data-lucide="arrow-left-right" class="w-7 h-7 text-primary"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-dark">3. Match & Exchange</h3>
                         </div>
-                        <h3 class="text-xl font-bold text-dark mb-3">3. Match & Exchange</h3>
                         <p class="text-light">Propose a trade. If both parties agree, it's a match! No money involved.
                         </p>
                     </div>
                     <!-- Step 4 -->
                     <div
                         class="bg-bgcolor p-8 rounded-2xl shadow-sm border border-bordercolor hover:shadow-md transition-shadow reveal hover:-translate-y-1 duration-300 delay-300">
-                        <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
-                            <i data-lucide="check-circle" class="w-7 h-7 text-primary"></i>
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center shrink-0">
+                                <i data-lucide="check-circle" class="w-7 h-7 text-primary"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-dark">4. Complete Trade</h3>
                         </div>
-                        <h3 class="text-xl font-bold text-dark mb-3">4. Complete Trade</h3>
                         <p class="text-light">Meet up or ship the items to finalize the exchange securely and easily.
                         </p>
                     </div>
@@ -168,7 +176,7 @@
         </section>
 
         <!-- Section 3: Features -->
-        <section id="features" class="py-24 bg-bgcolor">
+        <section id="features" class="py-24 bg-bgcolor min-h-screen flex flex-col justify-center">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16 reveal">
                     <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Features</h2>
@@ -279,7 +287,7 @@
         </section>
 
         <!-- Section 4: Demo -->
-        <section id="demo" class="py-24 bg-gray-900 text-white">
+        <section id="demo" class="py-24 bg-gray-900 text-white min-h-screen">
             <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12 reveal">
                     <h2 class="text-3xl md:text-4xl font-bold mb-4">See Takasla in Action</h2>
@@ -298,7 +306,7 @@
         </section>
 
         <!-- Section 5: Developers -->
-        <section id="developers" class="py-24 bg-bgcolor">
+        <section id="developers" class="py-24 bg-bgcolor min-h-screen flex flex-col justify-center">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16 reveal">
                     <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Meet the Team</h2>
@@ -421,7 +429,8 @@
         </section>
 
         <!-- Section 6: Tech Stack -->
-        <section id="tech-stack" class="py-24 bg-gray-50 border-t border-bordercolor">
+        <section id="tech-stack"
+            class="py-24 bg-gray-50 border-t border-bordercolor min-h-screen flex flex-col justify-center">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16 reveal">
                     <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Tech Stack</h2>
