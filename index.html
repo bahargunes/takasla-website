@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Takasla - The Modern Barter Platform</title>
+    <title>Takasla</title>
+    <link rel="icon" type="image/jpeg" href="assets/takasla_logo.jpg" class="rounded-lg">
     <meta name="description"
         content="Takasla is a platform that enables users to exchange items with each other instead of buying and selling.">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -98,9 +99,6 @@
         <section id="problem" class="py-24 bg-bgcolor">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-3xl mx-auto reveal">
-                    <div class="inline-flex items-center justify-center p-3 bg-primary/10 rounded-full mb-6">
-                        <i data-lucide="alert-circle" class="w-8 h-8 text-primary"></i>
-                    </div>
                     <h1 class="text-4xl md:text-5xl font-extrabold text-dark mb-6 tracking-tight">The Problem We're
                         Solving</h1>
                     <p class="text-xl text-light leading-relaxed mb-8">
@@ -178,38 +176,103 @@
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
                     <!-- Feature 1 -->
                     <div
                         class="group p-6 rounded-2xl border border-bordercolor hover:border-primary/50 hover:bg-gray-50 transition-all reveal">
-                        <div
-                            class="w-12 h-12 bg-gray-100 group-hover:bg-primary/10 rounded-full flex items-center justify-center mb-4 transition-colors">
-                            <i data-lucide="shield-check"
-                                class="w-6 h-6 text-light group-hover:text-primary transition-colors"></i>
+                        <div class="flex items-center gap-4 mb-4">
+                            <div
+                                class="w-12 h-12 bg-gray-100 group-hover:bg-primary/10 rounded-full flex items-center justify-center shrink-0 transition-colors">
+                                <i data-lucide="scale"
+                                    class="w-6 h-6 text-light group-hover:text-primary transition-colors"></i>
+                            </div>
+                            <h4 class="text-xl font-semibold text-dark">AI Value Matching</h4>
                         </div>
-                        <h4 class="text-xl font-semibold text-dark mb-2">Secure Verification</h4>
-                        <p class="text-light">All users undergo verification to ensure safe and trustworthy trades.</p>
+                        <p class="text-light">
+                            Our AI analyzes trade offers and warns users about unfair value differences before
+                            confirming a swap.
+                        </p>
                     </div>
+
                     <!-- Feature 2 -->
                     <div
                         class="group p-6 rounded-2xl border border-bordercolor hover:border-primary/50 hover:bg-gray-50 transition-all reveal delay-100">
-                        <div
-                            class="w-12 h-12 bg-gray-100 group-hover:bg-primary/10 rounded-full flex items-center justify-center mb-4 transition-colors">
-                            <i data-lucide="map-pin"
-                                class="w-6 h-6 text-light group-hover:text-primary transition-colors"></i>
+                        <div class="flex items-center gap-4 mb-4">
+                            <div
+                                class="w-12 h-12 bg-gray-100 group-hover:bg-primary/10 rounded-full flex items-center justify-center shrink-0 transition-colors">
+                                <i data-lucide="sparkles"
+                                    class="w-6 h-6 text-light group-hover:text-primary transition-colors"></i>
+                            </div>
+                            <h4 class="text-xl font-semibold text-dark">AI Category Detection</h4>
                         </div>
-                        <h4 class="text-xl font-semibold text-dark mb-2">Location Based</h4>
-                        <p class="text-light">Find items nearby to make physical exchanges easier and faster.</p>
+                        <p class="text-light">
+                            Automatically categorizes items using image recognition, making listings faster and more
+                            accurate.
+                        </p>
                     </div>
+
                     <!-- Feature 3 -->
                     <div
                         class="group p-6 rounded-2xl border border-bordercolor hover:border-primary/50 hover:bg-gray-50 transition-all reveal delay-200">
-                        <div
-                            class="w-12 h-12 bg-gray-100 group-hover:bg-primary/10 rounded-full flex items-center justify-center mb-4 transition-colors">
-                            <i data-lucide="message-square"
-                                class="w-6 h-6 text-light group-hover:text-primary transition-colors"></i>
+                        <div class="flex items-center gap-4 mb-4">
+                            <div
+                                class="w-12 h-12 bg-gray-100 group-hover:bg-primary/10 rounded-full flex items-center justify-center shrink-0 transition-colors">
+                                <i data-lucide="brain"
+                                    class="w-6 h-6 text-light group-hover:text-primary transition-colors"></i>
+                            </div>
+                            <h4 class="text-xl font-semibold text-dark">Smart Recommendations</h4>
                         </div>
-                        <h4 class="text-xl font-semibold text-dark mb-2">In-app Messaging</h4>
-                        <p class="text-light">Communicate directly with other users securely within the platform.</p>
+                        <p class="text-light">
+                            Discover items tailored to your interests based on your activity, wishlist, and preferences.
+                        </p>
+                    </div>
+
+                    <div
+                        class="group p-6 rounded-2xl border border-bordercolor hover:border-primary/50 hover:bg-gray-50 transition-all reveal">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div
+                                class="w-12 h-12 bg-gray-100 group-hover:bg-primary/10 rounded-full flex items-center justify-center shrink-0 transition-colors">
+                                <i data-lucide="star"
+                                    class="w-6 h-6 text-light group-hover:text-primary transition-colors"></i>
+                            </div>
+                            <h4 class="text-xl font-semibold text-dark">Rating & Badge System</h4>
+                        </div>
+                        <p class="text-light">
+                            Build trust through ratings and badges that reflect successful trades and community
+                            engagement.
+                        </p>
+                    </div>
+
+                    <!-- Feature 5 -->
+                    <div
+                        class="group p-6 rounded-2xl border border-bordercolor hover:border-primary/50 hover:bg-gray-50 transition-all reveal delay-100">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div
+                                class="w-12 h-12 bg-gray-100 group-hover:bg-primary/10 rounded-full flex items-center justify-center shrink-0 transition-colors">
+                                <i data-lucide="package"
+                                    class="w-6 h-6 text-light group-hover:text-primary transition-colors"></i>
+                            </div>
+                            <h4 class="text-xl font-semibold text-dark">Bundle Swap Offers</h4>
+                        </div>
+                        <p class="text-light">
+                            Combine multiple items into a single trade offer to create fair and flexible exchanges.
+                        </p>
+                    </div>
+
+                    <!-- Feature 6 -->
+                    <div
+                        class="group p-6 rounded-2xl border border-bordercolor hover:border-primary/50 hover:bg-gray-50 transition-all reveal delay-200">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div
+                                class="w-12 h-12 bg-gray-100 group-hover:bg-primary/10 rounded-full flex items-center justify-center shrink-0 transition-colors">
+                                <i data-lucide="message-circle"
+                                    class="w-6 h-6 text-light group-hover:text-primary transition-colors"></i>
+                            </div>
+                            <h4 class="text-xl font-semibold text-dark">In-app Chat</h4>
+                        </div>
+                        <p class="text-light">
+                            Communicate and negotiate trades securely with real-time messaging inside the platform.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -246,81 +309,101 @@
                     <!-- Dev 1 -->
                     <div class="reveal">
                         <div
-                            class="w-full sm:w-64 bg-bgcolor rounded-2xl p-6 border border-bordercolor shadow-sm hover:shadow-lg transition-all text-center hover:-translate-y-2">
+                            class="w-full sm:w-64 bg-bgcolor rounded-2xl p-6 border border-bordercolor shadow-sm hover:shadow-lg transition-all text-center hover:-translate-y-2 relative">
+                            <div class="absolute top-5 left-5 right-5 flex justify-between">
+                                <a href="https://github.com/ardaymn" target="_blank"
+                                    class="text-gray-400 hover:text-primary transition-colors">
+                                    <img src="assets/github.svg" class="w-5 h-5" alt="GitHub">
+                                </a>
+                                <a href="https://www.linkedin.com/in/arda-yaman-21608b238/" target="_blank"
+                                    class="text-gray-400 hover:text-primary transition-colors">
+                                    <img src="assets/LinkedIn.svg" class="w-5 h-5" alt="LinkedIn">
+                                </a>
+                            </div>
                             <img src="assets/devs/arda.jpeg" alt="Arda Yaman"
                                 class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-primary/20 object-cover">
                             <h4 class="text-xl font-bold text-dark">Arda Yaman</h4>
                             <p class="text-sm text-primary font-medium mb-4">Developer</p>
-                            <div class="flex justify-center space-x-3">
-                                <a href="#" class="text-light hover:text-dark transition-colors"><i data-lucide="github"
-                                        class="w-5 h-5"></i></a>
-                                <a href="#" class="text-light hover:text-[#0A66C2] transition-colors"><i
-                                        data-lucide="linkedin" class="w-5 h-5"></i></a>
-                            </div>
                         </div>
                     </div>
                     <!-- Dev 2 -->
                     <div class="reveal delay-100">
                         <div
-                            class="w-full sm:w-64 bg-bgcolor rounded-2xl p-6 border border-bordercolor shadow-sm hover:shadow-lg transition-all text-center hover:-translate-y-2">
+                            class="w-full sm:w-64 bg-bgcolor rounded-2xl p-6 border border-bordercolor shadow-sm hover:shadow-lg transition-all text-center hover:-translate-y-2 relative">
+                            <div class="absolute top-5 left-5 right-5 flex justify-between">
+                                <a href="https://github.com/bahargunes" target="_blank"
+                                    class="text-gray-400 hover:text-primary transition-colors">
+                                    <img src="assets/github.svg" class="w-5 h-5" alt="GitHub">
+                                </a>
+                                <a href="https://www.linkedin.com/in/bahar-gunes/" target="_blank"
+                                    class="text-gray-400 hover:text-primary transition-colors">
+                                    <img src="assets/LinkedIn.svg" class="w-5 h-5" alt="LinkedIn">
+                                </a>
+                            </div>
                             <img src="assets/devs/bahar.jpeg" alt="Bahar Güneş"
                                 class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-primary/20 object-cover">
                             <h4 class="text-xl font-bold text-dark">Bahar Güneş</h4>
                             <p class="text-sm text-primary font-medium mb-4">Developer</p>
-                            <div class="flex justify-center space-x-3">
-                                <a href="#" class="text-light hover:text-dark transition-colors"><i data-lucide="github"
-                                        class="w-5 h-5"></i></a>
-                                <a href="#" class="text-light hover:text-[#0A66C2] transition-colors"><i
-                                        data-lucide="linkedin" class="w-5 h-5"></i></a>
-                            </div>
                         </div>
                     </div>
                     <!-- Dev 3 -->
                     <div class="reveal delay-200">
                         <div
-                            class="w-full sm:w-64 bg-bgcolor rounded-2xl p-6 border border-bordercolor shadow-sm hover:shadow-lg transition-all text-center hover:-translate-y-2">
+                            class="w-full sm:w-64 bg-bgcolor rounded-2xl p-6 border border-bordercolor shadow-sm hover:shadow-lg transition-all text-center hover:-translate-y-2 relative">
+                            <div class="absolute top-5 left-5 right-5 flex justify-between">
+                                <a href="https://github.com/CenkKeremCengiz" target="_blank"
+                                    class="text-gray-400 hover:text-primary transition-colors">
+                                    <img src="assets/github.svg" class="w-5 h-5" alt="GitHub">
+                                </a>
+                                <a href="https://www.linkedin.com/in/cenkkeremcengiz/" target="_blank"
+                                    class="text-gray-400 hover:text-primary transition-colors">
+                                    <img src="assets/LinkedIn.svg" class="w-5 h-5" alt="LinkedIn">
+                                </a>
+                            </div>
                             <img src="assets/devs/cenk.jpeg" alt="Cenk Kerem Cengiz"
                                 class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-primary/20 object-cover">
                             <h4 class="text-xl font-bold text-dark">Cenk Kerem Cengiz</h4>
                             <p class="text-sm text-primary font-medium mb-4">Developer</p>
-                            <div class="flex justify-center space-x-3">
-                                <a href="#" class="text-light hover:text-dark transition-colors"><i data-lucide="github"
-                                        class="w-5 h-5"></i></a>
-                                <a href="#" class="text-light hover:text-[#0A66C2] transition-colors"><i
-                                        data-lucide="linkedin" class="w-5 h-5"></i></a>
-                            </div>
                         </div>
                     </div>
                     <!-- Dev 4 -->
                     <div class="reveal delay-300">
                         <div
-                            class="w-full sm:w-64 bg-bgcolor rounded-2xl p-6 border border-bordercolor shadow-sm hover:shadow-lg transition-all text-center hover:-translate-y-2">
+                            class="w-full sm:w-64 bg-bgcolor rounded-2xl p-6 border border-bordercolor shadow-sm hover:shadow-lg transition-all text-center hover:-translate-y-2 relative">
+                            <div class="absolute top-5 left-5 right-5 flex justify-between">
+                                <a href="https://github.com/iemrerturk" target="_blank"
+                                    class="text-gray-400 hover:text-primary transition-colors">
+                                    <img src="assets/github.svg" class="w-5 h-5" alt="GitHub">
+                                </a>
+                                <a href="https://www.linkedin.com/in/iemrerturk/" target="_blank"
+                                    class="text-gray-400 hover:text-primary transition-colors">
+                                    <img src="assets/LinkedIn.svg" class="w-5 h-5" alt="LinkedIn">
+                                </a>
+                            </div>
                             <img src="assets/devs/ibo.jpeg" alt="İbrahim Emre Ertürk"
                                 class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-primary/20 object-cover">
                             <h4 class="text-xl font-bold text-dark">İbrahim Emre Ertürk</h4>
                             <p class="text-sm text-primary font-medium mb-4">Developer</p>
-                            <div class="flex justify-center space-x-3">
-                                <a href="#" class="text-light hover:text-dark transition-colors"><i data-lucide="github"
-                                        class="w-5 h-5"></i></a>
-                                <a href="#" class="text-light hover:text-[#0A66C2] transition-colors"><i
-                                        data-lucide="linkedin" class="w-5 h-5"></i></a>
-                            </div>
                         </div>
                     </div>
                     <!-- Dev 5 -->
                     <div class="reveal delay-400">
                         <div
-                            class="w-full sm:w-64 bg-bgcolor rounded-2xl p-6 border border-bordercolor shadow-sm hover:shadow-lg transition-all text-center hover:-translate-y-2">
+                            class="w-full sm:w-64 bg-bgcolor rounded-2xl p-6 border border-bordercolor shadow-sm hover:shadow-lg transition-all text-center hover:-translate-y-2 relative">
+                            <div class="absolute top-5 left-5 right-5 flex justify-between">
+                                <a href="https://github.com/ned1mefe" target="_blank"
+                                    class="text-gray-400 hover:text-primary transition-colors">
+                                    <img src="assets/github.svg" class="w-5 h-5" alt="GitHub">
+                                </a>
+                                <a href="https://www.linkedin.com/in/nedimefecandas/" target="_blank"
+                                    class="text-gray-400 hover:text-primary transition-colors">
+                                    <img src="assets/LinkedIn.svg" class="w-5 h-5" alt="LinkedIn">
+                                </a>
+                            </div>
                             <img src="assets/devs/efe.jpeg" alt="Nedim Efe Candaş"
                                 class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-primary/20 object-cover">
                             <h4 class="text-xl font-bold text-dark">Nedim Efe Candaş</h4>
                             <p class="text-sm text-primary font-medium mb-4">Developer</p>
-                            <div class="flex justify-center space-x-3">
-                                <a href="#" class="text-light hover:text-dark transition-colors"><i data-lucide="github"
-                                        class="w-5 h-5"></i></a>
-                                <a href="#" class="text-light hover:text-[#0A66C2] transition-colors"><i
-                                        data-lucide="linkedin" class="w-5 h-5"></i></a>
-                            </div>
                         </div>
                     </div>
                     <!-- Dev 6 -->
@@ -331,12 +414,6 @@
                                 class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-primary/20 object-cover">
                             <h4 class="text-xl font-bold text-dark">Cevat Şener</h4>
                             <p class="text-sm text-primary font-medium mb-4">Advisor</p>
-                            <div class="flex justify-center space-x-3">
-                                <a href="#" class="text-light hover:text-dark transition-colors"><i data-lucide="github"
-                                        class="w-5 h-5"></i></a>
-                                <a href="#" class="text-light hover:text-[#0A66C2] transition-colors"><i
-                                        data-lucide="linkedin" class="w-5 h-5"></i></a>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -351,7 +428,7 @@
                     <p class="text-lg text-light">Built with modern, reliable technologies</p>
                 </div>
 
-                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
                     <!-- Tech 1: Flutter -->
                     <div
                         class="flex flex-col items-center justify-center p-6 bg-bgcolor rounded-2xl border border-bordercolor shadow-sm hover:shadow-md transition-shadow reveal">
@@ -382,6 +459,11 @@
                         <img src="assets/gitlab_logo.png" alt="GitLab" class="h-16 w-auto object-contain mb-4">
                         <h4 class="text-lg font-semibold text-dark">GitLab</h4>
                     </div>
+                    <div
+                        class="flex flex-col items-center justify-center p-6 bg-bgcolor rounded-2xl border border-bordercolor shadow-sm hover:shadow-md transition-shadow reveal delay-400">
+                        <img src="assets/gemini.jpeg" alt="Gemini" class="h-16 w-auto object-contain mb-4">
+                        <h4 class="text-lg font-semibold text-dark">Gemini</h4>
+                    </div>
                 </div>
             </div>
         </section>
@@ -395,14 +477,10 @@
             </div>
             <p class="text-gray-400 mb-6">Refresh your life. Exchange items, save money, and build community.</p>
             <div class="flex justify-center space-x-6 mb-8">
-                <a href="#" class="text-gray-400 hover:text-primary transition-colors"><i data-lucide="twitter"
-                        class="w-6 h-6"></i></a>
-                <a href="#" class="text-gray-400 hover:text-primary transition-colors"><i data-lucide="instagram"
-                        class="w-6 h-6"></i></a>
                 <a href="#" class="text-gray-400 hover:text-primary transition-colors"><i data-lucide="mail"
                         class="w-6 h-6"></i></a>
             </div>
-            <p class="text-sm text-gray-500">&copy; 2026 Takasla. All rights reserved.</p>
+            <p class="text-sm text-gray-500">&copy; 2026 Takasla.</p>
         </div>
     </footer>
 
