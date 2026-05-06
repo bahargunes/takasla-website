@@ -153,60 +153,84 @@
         </section>
 
         <!-- Section 2: How It Works -->
-        <section id="how-it-works" class="py-24 bg-gray-50 min-h-screen flex flex-col justify-center">
+        <section id="how-it-works" class="py-24 bg-gray-50">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16 reveal">
                     <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">How It Works</h2>
                     <p class="text-lg text-light">Exchange items in four simple steps</p>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8">
-                    <!-- Step 1 -->
-                    <div
-                        class="bg-bgcolor p-8 rounded-2xl shadow-sm border border-bordercolor hover:shadow-md transition-shadow reveal hover:-translate-y-1 duration-300">
-                        <div class="flex items-center gap-4 mb-4">
-                            <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center shrink-0">
-                                <i data-lucide="plus-square" class="w-7 h-7 text-primary"></i>
-                            </div>
-                            <h3 class="text-xl font-bold text-dark">1. Create a Listing</h3>
+                <div class="features-layout">
+                    <!-- Left: Phone Stack Animation -->
+                    <div class="phone-stack-wrapper">
+                        <div class="phone-stack" id="phone-stack">
+                            <img src="assets/phone.png" alt="Takasla App Screen 1" class="phone-card phone-left"
+                                draggable="false">
+                            <img src="assets/phone.png" alt="Takasla App Screen 2" class="phone-card phone-right"
+                                draggable="false">
+                            <img src="assets/phone.png" alt="Takasla App Screen 3" class="phone-card phone-center"
+                                draggable="false">
                         </div>
-                        <p class="text-light">Snap a photo and add a brief description of the item you want to trade.
-                        </p>
                     </div>
-                    <!-- Step 2 -->
-                    <div
-                        class="bg-bgcolor p-8 rounded-2xl shadow-sm border border-bordercolor hover:shadow-md transition-shadow reveal hover:-translate-y-1 duration-300 delay-100">
-                        <div class="flex items-center gap-4 mb-4">
-                            <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center shrink-0">
-                                <i data-lucide="search" class="w-7 h-7 text-primary"></i>
+
+                    <!-- Right: Step Cards (single column) -->
+                    <div class="features-column lg:ml-32 xl:ml-48">
+                        <!-- Step 1 -->
+                        <div
+                            class="bg-bgcolor p-8 rounded-2xl shadow-sm border border-bordercolor hover:shadow-md transition-shadow reveal hover:-translate-y-1 duration-300">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div
+                                    class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center shrink-0">
+                                    <i data-lucide="plus-square" class="w-7 h-7 text-primary"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-dark">1. Create a Listing</h3>
                             </div>
-                            <h3 class="text-xl font-bold text-dark">2. Browse Items</h3>
+                            <p class="text-light">Snap a photo and add a brief description of the item you want to
+                                trade.
+                            </p>
                         </div>
-                        <p class="text-light">Explore items offered by others in your community that you might want.</p>
-                    </div>
-                    <!-- Step 3 -->
-                    <div
-                        class="bg-bgcolor p-8 rounded-2xl shadow-sm border border-bordercolor hover:shadow-md transition-shadow reveal hover:-translate-y-1 duration-300 delay-200">
-                        <div class="flex items-center gap-4 mb-4">
-                            <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center shrink-0">
-                                <i data-lucide="arrow-left-right" class="w-7 h-7 text-primary"></i>
+                        <!-- Step 2 -->
+                        <div
+                            class="bg-bgcolor p-8 rounded-2xl shadow-sm border border-bordercolor hover:shadow-md transition-shadow reveal hover:-translate-y-1 duration-300 delay-100">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div
+                                    class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center shrink-0">
+                                    <i data-lucide="search" class="w-7 h-7 text-primary"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-dark">2. Browse Items</h3>
                             </div>
-                            <h3 class="text-xl font-bold text-dark">3. Match & Exchange</h3>
+                            <p class="text-light">Explore items offered by others in your community that you might want.
+                            </p>
                         </div>
-                        <p class="text-light">Propose a trade. If both parties agree, it's a match! No money involved.
-                        </p>
-                    </div>
-                    <!-- Step 4 -->
-                    <div
-                        class="bg-bgcolor p-8 rounded-2xl shadow-sm border border-bordercolor hover:shadow-md transition-shadow reveal hover:-translate-y-1 duration-300 delay-300">
-                        <div class="flex items-center gap-4 mb-4">
-                            <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center shrink-0">
-                                <i data-lucide="check-circle" class="w-7 h-7 text-primary"></i>
+                        <!-- Step 3 -->
+                        <div
+                            class="bg-bgcolor p-8 rounded-2xl shadow-sm border border-bordercolor hover:shadow-md transition-shadow reveal hover:-translate-y-1 duration-300 delay-200">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div
+                                    class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center shrink-0">
+                                    <i data-lucide="arrow-left-right" class="w-7 h-7 text-primary"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-dark">3. Match & Exchange</h3>
                             </div>
-                            <h3 class="text-xl font-bold text-dark">4. Complete Trade</h3>
+                            <p class="text-light">Propose a trade. If both parties agree, it's a match! No money
+                                involved.
+                            </p>
                         </div>
-                        <p class="text-light">Meet up or ship the items to finalize the exchange securely and easily.
-                        </p>
+                        <!-- Step 4 -->
+                        <div
+                            class="bg-bgcolor p-8 rounded-2xl shadow-sm border border-bordercolor hover:shadow-md transition-shadow reveal hover:-translate-y-1 duration-300 delay-300">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div
+                                    class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center shrink-0">
+                                    <i data-lucide="check-circle" class="w-7 h-7 text-primary"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-dark">4. Complete Trade</h3>
+                            </div>
+                            <p class="text-light">Meet up or ship the items to finalize the exchange securely and
+                                easily.
+                            </p>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -272,6 +296,7 @@
                         </p>
                     </div>
 
+                    <!-- Feature 4 -->
                     <div
                         class="group p-6 rounded-2xl border border-bordercolor hover:border-primary/50 hover:bg-gray-50 transition-all reveal">
                         <div class="flex items-center gap-4 mb-4">

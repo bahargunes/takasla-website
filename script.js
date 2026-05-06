@@ -128,4 +128,78 @@ document.addEventListener('DOMContentLoaded', () => {
 
         window.addEventListener('scroll', updateHandsFromScroll);
     }
+
+    // ===== Phone Stack: Viewport-Center Proximity Animation =====
+    const phoneStack = document.getElementById('phone-stack');
+    const phoneLeft = document.querySelector('.phone-left');
+    const phoneRight = document.querySelector('.phone-right');
+    const phoneCenter = document.querySelector('.phone-center');
+
+    if (phoneStack && phoneLeft && phoneRight && phoneCenter) {
+        // Easing: smooth deceleration
+        const easeOutCubic = (t) => 1 - Math.pow(1 - t, 3);
+
+        let ticking = false;
+
+        const updatePhoneAnimation = () => {
+            const rect = phoneStack.getBoundingClientRect();
+            const viewportCenter = window.innerHeight / 2;
+            const stackCenter = rect.top + rect.height / 2;
+
+            // Distance from viewport center, normalized to viewport half-height
+            // 0 = phone stack is perfectly centered, 1 = phone stack is one viewport away
+            const rawDistance = Math.abs(stackCenter - viewportCenter) / (window.innerHeight * 0.6);
+            const distance = Math.min(1, rawDistance);
+
+            // Invert: 1 when centered (fully open), 0 when far (fully closed)
+            const openness = easeOutCubic(1 - distance);
+
+            // === Reference-image style: stacked leaning left, fan out to the right ===
+            // Closed state: all phones lean left at baseRotation
+            // Open state: they fan out like cards — left stays left, center straightens, right goes right
+            const baseRotation = -18;  // initial lean (degrees, negative = left)
+
+            // Left phone (bottom of stack): stays leaned left, shifts slightly down-left
+            const leftRotate = baseRotation - openness * 5;        // -12° → -17°
+            const leftX = -openness * 25;                           // shift left
+            const leftY = -openness * 5;                            // shift down
+            const leftScale = 1 - openness * 0.03;
+            phoneLeft.style.transform = `translateX(${leftX}%) translateY(${leftY}px) rotate(${leftRotate}deg) scale(${leftScale})`;
+
+            // Center phone (middle): straightens up, slight shift right
+            const centerRotate = baseRotation + openness * 10;    // -12° → -2°
+            const centerX = openness * 8;                          // slight right shift
+            const centerY = -openness * 15;                        // lift up
+            const centerScale = 1 + openness * 0.03;
+            phoneCenter.style.transform = `translateX(${centerX}%) translateY(${centerY}px) rotate(${centerRotate}deg) scale(${centerScale})`;
+
+            // Right phone (top of stack): rotates clockwise, shifts up-right
+            const rightRotate = baseRotation + openness * 25;     // -12° → +13°
+            const rightX = openness * 30;                          // shift right
+            const rightY = -openness * 25;                         // shift up
+            const rightScale = 1 + openness * 0.03;
+            phoneRight.style.transform = `translateX(${rightX}%) translateY(${rightY}px) rotate(${rightRotate}deg) scale(${rightScale})`;
+
+            // Dynamic shadow depth based on spread
+            const shadowBlur = 20 + openness * 25;
+            const shadowOpacity = 0.12 + openness * 0.1;
+            phoneLeft.style.filter = `drop-shadow(0 ${shadowBlur}px ${shadowBlur * 1.5}px rgba(0,0,0,${shadowOpacity}))`;
+            phoneRight.style.filter = `drop-shadow(0 ${shadowBlur}px ${shadowBlur * 1.5}px rgba(0,0,0,${shadowOpacity}))`;
+            phoneCenter.style.filter = `drop-shadow(0 ${shadowBlur}px ${shadowBlur * 1.5}px rgba(0,0,0,${shadowOpacity + 0.05}))`;
+
+            ticking = false;
+        };
+
+        const onScroll = () => {
+            if (!ticking) {
+                requestAnimationFrame(updatePhoneAnimation);
+                ticking = true;
+            }
+        };
+
+        window.addEventListener('scroll', onScroll, { passive: true });
+        window.addEventListener('resize', onScroll, { passive: true });
+        // Initial state
+        updatePhoneAnimation();
+    }
 });
