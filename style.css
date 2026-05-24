@@ -155,8 +155,8 @@ html {
 
 @media (min-width: 1024px) {
     .phone-stack {
-        width: 240px;
-        height: 480px;
+        width: 200px;
+        height: 400px;
     }
 
     .phone-stack-wrapper {
@@ -166,8 +166,8 @@ html {
 
 @media (min-width: 1280px) {
     .phone-stack {
-        width: 280px;
-        height: 560px;
+        width: 240px;
+        height: 480px;
     }
 
     .phone-stack-wrapper {
