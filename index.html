@@ -55,7 +55,7 @@
                     <a href="#vision"
                         class="nav-link text-light hover:text-primary transition-colors font-medium">Vision</a>
                     <a href="#platform"
-                        class="nav-link text-light hover:text-primary transition-colors font-medium">Platform</a>
+                        class="nav-link text-light hover:text-primary transition-colors font-medium">Workflow</a>
                     <a href="#features"
                         class="nav-link text-light hover:text-primary transition-colors font-medium">Features</a>
                     <a href="#demo"
@@ -120,21 +120,22 @@
                 </p>
                 <div class="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
                     <a href="#vision"
-                    class="px-5 py-3 text-sm sm:px-8 sm:py-4 sm:text-lg font-semibold rounded-full text-dark bg-primary hover:bg-opacity-90 transition-all shadow-lg hover:shadow-xl hover:-translate-y-1 duration-300">
-                    See Our Vision
-                </a>
-                <a href="#platform"
-                    class="px-5 py-3 text-sm sm:px-8 sm:py-4 sm:text-lg font-semibold rounded-full text-dark bg-white border border-bordercolor hover:bg-gray-50 transition-all shadow-sm hover:shadow-md hover:-translate-y-1 duration-300">
-                    Explore the Platform
-                </a>
-            </div>
+                        class="px-5 py-3 text-sm sm:px-8 sm:py-4 sm:text-lg font-semibold rounded-full text-dark bg-primary hover:bg-opacity-90 transition-all shadow-lg hover:shadow-xl hover:-translate-y-1 duration-300">
+                        See Our Vision
+                    </a>
+                    <a href="#platform"
+                        class="px-5 py-3 text-sm sm:px-8 sm:py-4 sm:text-lg font-semibold rounded-full text-dark bg-white border border-bordercolor hover:bg-gray-50 transition-all shadow-sm hover:shadow-md hover:-translate-y-1 duration-300">
+                        Explore the Platform
+                    </a>
+                </div>
         </section>
 
         <!-- Section 1: Vision -->
-        <section id="vision" class="py-24 bg-bgcolor min-h-screen flex flex-col justify-center">
+        <section id="vision" class="py-12 bg-gray-50 lg:min-h-[calc(100vh-5rem)] flex flex-col justify-center">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-3xl mx-auto reveal">
-                    <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-dark mb-4 sm:mb-6 tracking-tight">Our Vision</h1>
+                    <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-dark mb-4 sm:mb-6 tracking-tight">
+                        Our Vision</h1>
                     <p class="text-base sm:text-xl text-light leading-relaxed mb-6 sm:mb-8 px-2 sm:px-0">
                         Traditional bartering relies on unstructured and inefficient processes. We are modernizing the
                         barter ecosystem by enabling structured item exchange, improving trust and fairness, and using
@@ -150,7 +151,7 @@
         </section>
 
         <!-- Section 2: Platform -->
-        <section id="platform" class="py-24 bg-gray-50">
+        <section id="platform" class="py-10 bg-bgcolor overflow-x-hidden lg:min-h-[calc(100vh-5rem)] flex flex-col justify-center">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16 reveal">
                     <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Platform Workflow</h2>
@@ -171,62 +172,59 @@
                     </div>
 
                     <!-- Right: Step Cards (single column) -->
-                    <div class="features-column lg:ml-32 xl:ml-48">
+                    <div class="features-column">
                         <!-- Step 1 -->
                         <div
-                            class="bg-bgcolor p-8 rounded-2xl shadow-sm border border-bordercolor hover:shadow-md transition-shadow reveal hover:-translate-y-1 duration-300">
-                            <div class="flex items-center gap-4 mb-4">
+                            class="bg-bgcolor p-5 rounded-2xl shadow-sm border border-bordercolor hover:shadow-md transition-shadow reveal hover:-translate-y-1 duration-300">
+                            <div class="flex items-center gap-3 mb-3">
                                 <div
-                                    class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center shrink-0">
-                                    <i data-lucide="plus-square" class="w-7 h-7 text-primary"></i>
+                                    class="w-11 h-11 bg-primary/10 rounded-xl flex items-center justify-center shrink-0">
+                                    <i data-lucide="plus-square" class="w-5 h-5 text-primary"></i>
                                 </div>
-                                <h3 class="text-xl font-bold text-dark">1. Create a Listing</h3>
+                                <h3 class="text-base font-bold text-dark">1. Create a Listing</h3>
                             </div>
-                            <p class="text-light">Snap a photo and add a brief description of the item you want to
-                                trade.
-                            </p>
+                            <p class="text-sm text-light">Snap a photo and add a brief description of the item you want
+                                to trade.</p>
                         </div>
                         <!-- Step 2 -->
                         <div
-                            class="bg-bgcolor p-8 rounded-2xl shadow-sm border border-bordercolor hover:shadow-md transition-shadow reveal hover:-translate-y-1 duration-300 delay-100">
-                            <div class="flex items-center gap-4 mb-4">
+                            class="bg-bgcolor p-5 rounded-2xl shadow-sm border border-bordercolor hover:shadow-md transition-shadow reveal hover:-translate-y-1 duration-300 delay-100">
+                            <div class="flex items-center gap-3 mb-3">
                                 <div
-                                    class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center shrink-0">
-                                    <i data-lucide="search" class="w-7 h-7 text-primary"></i>
+                                    class="w-11 h-11 bg-primary/10 rounded-xl flex items-center justify-center shrink-0">
+                                    <i data-lucide="search" class="w-5 h-5 text-primary"></i>
                                 </div>
-                                <h3 class="text-xl font-bold text-dark">2. Browse Items</h3>
+                                <h3 class="text-base font-bold text-dark">2. Browse Items</h3>
                             </div>
-                            <p class="text-light">Explore items offered by others in your community that you might want.
-                            </p>
+                            <p class="text-sm text-light">Explore items offered by others in your community that you
+                                might want.</p>
                         </div>
                         <!-- Step 3 -->
                         <div
-                            class="bg-bgcolor p-8 rounded-2xl shadow-sm border border-bordercolor hover:shadow-md transition-shadow reveal hover:-translate-y-1 duration-300 delay-200">
-                            <div class="flex items-center gap-4 mb-4">
+                            class="bg-bgcolor p-5 rounded-2xl shadow-sm border border-bordercolor hover:shadow-md transition-shadow reveal hover:-translate-y-1 duration-300 delay-200">
+                            <div class="flex items-center gap-3 mb-3">
                                 <div
-                                    class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center shrink-0">
-                                    <i data-lucide="arrow-left-right" class="w-7 h-7 text-primary"></i>
+                                    class="w-11 h-11 bg-primary/10 rounded-xl flex items-center justify-center shrink-0">
+                                    <i data-lucide="arrow-left-right" class="w-5 h-5 text-primary"></i>
                                 </div>
-                                <h3 class="text-xl font-bold text-dark">3. Match & Exchange</h3>
+                                <h3 class="text-base font-bold text-dark">3. Match & Exchange</h3>
                             </div>
-                            <p class="text-light">Propose a trade. If both parties agree, it's a match! No money
+                            <p class="text-sm text-light">Propose a trade. If both parties agree, it's a match! No money
                                 involved.
                             </p>
                         </div>
                         <!-- Step 4 -->
                         <div
-                            class="bg-bgcolor p-8 rounded-2xl shadow-sm border border-bordercolor hover:shadow-md transition-shadow reveal hover:-translate-y-1 duration-300 delay-300">
-                            <div class="flex items-center gap-4 mb-4">
+                            class="bg-bgcolor p-5 rounded-2xl shadow-sm border border-bordercolor hover:shadow-md transition-shadow reveal hover:-translate-y-1 duration-300 delay-300">
+                            <div class="flex items-center gap-3 mb-3">
                                 <div
-                                    class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center shrink-0">
-                                    <i data-lucide="check-circle" class="w-7 h-7 text-primary"></i>
+                                    class="w-11 h-11 bg-primary/10 rounded-xl flex items-center justify-center shrink-0">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-primary"></i>
                                 </div>
-                                <h3 class="text-xl font-bold text-dark">4. Complete Trade</h3>
+                                <h3 class="text-base font-bold text-dark">4. Complete Trade</h3>
                             </div>
-                            <p class="text-light">Meet up or ship the items to finalize the exchange securely and
-                                easily.
-                            </p>
-
+                            <p class="text-sm text-light">Meet up or ship the items to finalize the exchange securely
+                                and easily.</p>
                         </div>
                     </div>
                 </div>
@@ -234,7 +232,7 @@
         </section>
 
         <!-- Section 3: Features -->
-        <section id="features" class="py-24 bg-bgcolor min-h-screen flex flex-col justify-center">
+        <section id="features" class="py-10 bg-gray-50 lg:min-h-[calc(100vh-5rem)] flex flex-col justify-center">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16 reveal">
                     <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Features</h2>
@@ -347,9 +345,9 @@
         </section>
 
         <!-- Section 4: Demo -->
-        <section id="demo" class="py-24 bg-gray-900 text-white min-h-screen">
-            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-12 reveal">
+        <section id="demo" class="py-10 bg-gray-900 text-white lg:min-h-[calc(100vh-5rem)] flex flex-col justify-center">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-6 reveal">
                     <h2 class="text-3xl md:text-4xl font-bold mb-4">System Demonstration</h2>
                     <p class="text-gray-400 text-lg">Watch the video to see our AI-assisted listing creation, automated
                         category prediction, personalized recommendations, trade proposal workflow, and real-time
@@ -368,14 +366,14 @@
         </section>
 
         <!-- Section 5: Team -->
-        <section id="team" class="py-24 bg-bgcolor">
+        <section id="team" class="py-10 bg-bgcolor lg:min-h-[calc(100vh-5rem)] flex flex-col justify-center">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16 reveal">
+                <div class="text-center mb-8 reveal">
                     <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Engineering Team</h2>
                     <p class="text-lg text-light">The developers and advisor behind the Takasla project</p>
                 </div>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 justify-items-center">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 justify-items-center">
                     <!-- Dev 1 -->
                     <div class="reveal w-full max-w-[280px]">
                         <div
@@ -491,9 +489,9 @@
         </section>
 
         <!-- Section 6: Technology -->
-        <section id="technology" class="py-24 bg-gray-50 border-t border-bordercolor">
+        <section id="technology" class="py-10 bg-gray-50 border-t border-bordercolor lg:min-h-[calc(100vh-5rem)] flex flex-col justify-center">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16 reveal">
+                <div class="text-center mb-8 reveal">
                     <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Technology Stack</h2>
                     <p class="text-lg text-light">Core technologies and frameworks used in the system architecture</p>
                 </div>
